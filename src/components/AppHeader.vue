@@ -1,18 +1,22 @@
 
 <script>
-import {store} from '../store' 
+import Jumbotron from './Jumbotron.vue';
+import Navbar from './Navbar.vue';
+
 export default {
     name: 'AppHeader',
-    data() {
-        return {
-            store,
-        }
-    },
+components:{
+    Jumbotron,
+    Navbar,
+}
 }
 </script>
-<template >
-  
+<template>
+    <header>
+        <Navbar/>
+        <Jumbotron/>
+    </header>
 </template>
 <style lang="scss" scoped>
-    
+
 </style>

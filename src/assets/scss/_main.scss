@@ -1,1 +1,52 @@
-@use './variables'
+@use './variables' as *;
+
+
+main {
+    h2 {
+        font-weight: 100;
+    }
+
+    h6 {
+        font-size: 0.85rem;
+        font-weight: 100;
+        line-height: 1.5rem;
+    }
+
+    p {
+        font-size: 0.65rem;
+        font-weight: 100;
+        line-height: 1.2rem;
+    }
+
+    .section_title {
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .doctors {
+        background-color: #F7F7F7;
+
+        .section_title {
+            img {
+                width: 50px;
+            }
+
+            .line {
+                border-bottom: 1px solid black;
+                width: 154px;
+                height: 1px;
+                margin: 1.5rem auto;
+            }
+        }
+
+        .card{
+            background-color: $clr-light;
+
+            p .name_work{
+                font-size: 0.85rem;
+            }
+        }
+    }
+
+}
