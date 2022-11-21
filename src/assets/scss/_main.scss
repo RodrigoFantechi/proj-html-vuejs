@@ -2,27 +2,8 @@
 
 
 main {
-    h2 {
-        font-weight: 100;
-    }
-
-    h6 {
-        font-size: 0.85rem;
-        font-weight: 100;
-        line-height: 1.5rem;
-    }
-
-    p {
-        font-size: 0.65rem;
-        font-weight: 100;
-        line-height: 1.2rem;
-    }
-
-    .section_title {
-        width: 70%;
-        margin: auto;
-    }
-
+    font-family: $noto-sans;
+    font-weight: 100;
 
     .doctors {
         background-color: #F7F7F7;
@@ -39,14 +20,5 @@ main {
                 margin: 1.5rem auto;
             }
         }
-
-        .card{
-            background-color: $clr-light;
-
-            p .name_work{
-                font-size: 0.85rem;
-            }
-        }
     }
-
 }

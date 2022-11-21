@@ -10,7 +10,28 @@ export const store = reactive({
         'DEPARTMENTS',
         'ARTICLES',
         'MAKE APPOINTMENT'
+    ],
+    title:[
+        'SAME DAY APPOINTMENTS',
+        'WORLD CLASS FACILITIES',
+        'EXPERT DOCTORS',
+        'COMPLEMENTARY THERAPIES',
+    ],
+    doctors:[
+        {
+            name: 'JON SNOW',
+            profession: 'Anesthesiologist',
+        },
+        {
+            name: 'TONY STARK',
+            profession: 'Cardiologist',
+        },
+        {
+            name: 'ANNA SMITH',
+            profession: 'Nurse Practitioner',
+        },
     ]
+    
 
    
 })
