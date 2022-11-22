@@ -7,13 +7,17 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube} from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faFacebookF)
-
+library.add(faYoutube)
 library.add(faTwitter)
 library.add(faInstagram)
+library.add(faLocationDot)
+library.add(faPhone)
 
 
 

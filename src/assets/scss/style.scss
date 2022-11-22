@@ -65,3 +65,6 @@ input[type~="text"], textarea{
 textarea:focus, input:focus{
     outline: none;
 }
+.clr_primary{
+    color: $clr-primary;
+}
