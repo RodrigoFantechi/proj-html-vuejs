@@ -10,7 +10,7 @@ export default {
             <slot name="image"></slot>
             <slot name="title"></slot>
             <slot name="description"></slot>
-            <div class="list_icons d-flex p-3"><slot name="icons"></slot></div>
+            <slot name="icons"></slot>
         </div>
     </div>
     <!-- /.col -->

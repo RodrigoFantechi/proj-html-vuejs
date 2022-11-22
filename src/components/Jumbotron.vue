@@ -23,7 +23,7 @@ export default {
         background-image: url(../assets/img/header-image-homepage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 10rem 0;
+        padding: 7rem 0;
         color: $clr-light;
 
 

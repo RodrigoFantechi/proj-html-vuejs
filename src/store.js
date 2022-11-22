@@ -56,6 +56,11 @@ export const store = reactive({
             title: 'MEDICAL CONSELING',
             img: '13'
         },
+    ],
+    facilities:[
+        'Emergency Care',
+        'Expert Diagnostics',
+        'Superb Rehabilitation'
     ]
     
 

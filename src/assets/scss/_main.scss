@@ -4,45 +4,55 @@
 main {
     font-family: $noto-sans;
     font-weight: 100;
-
-    .py-6{
-        padding: 6rem 0;
+    text-align: center;
+    h2 {
+        font-weight: 100;
     }
+
     h6 {
         font-size: 0.85rem;
         font-weight: 100;
         line-height: 1.5rem;
     }
-    
+
     p {
         font-size: 0.65rem;
         font-weight: 100;
         line-height: 1.2rem;
     }
-    .square{
-       height: 19px;
-       aspect-ratio: 1/1;
-       margin: 0 0.2rem;
+
+    .square {
+        height: 19px;
+        aspect-ratio: 1/1;
+        margin: 0 0.2rem;
     }
-    .face{
+
+    .face {
         background-color: $clr-face;
     }
-    .twi{
+
+    .twi {
         background-color: $clr-twi;
     }
-    .insta{
+
+    .insta {
         background-color: $clr-insta;
     }
-    .i{
+
+    .i {
         color: $clr-light;
         font-size: 0.65rem;
     }
-    
+
     .section_title {
         img {
             width: 50px;
         }
+
+        width: 70%;
+        margin: auto;
     }
+
     .line {
         border-bottom: 1px solid black;
         width: 154px;
@@ -53,6 +63,6 @@ main {
     .doctors {
         background-color: $clr-light-1;
 
-      
-        }
+
     }
+}
