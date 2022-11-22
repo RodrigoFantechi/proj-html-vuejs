@@ -71,5 +71,26 @@ export default {
         </section>
 </template>
 <style lang="scss" scoped>
-    
+@use '../assets/scss/variables' as *;
+.appointment {
+        color: $clr-light;
+
+        .top {
+            background-image: url(../assets/img/make-an-appointment.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            button {
+                border: none;
+                color: $clr-light;
+                width: 100%;
+
+            }
+        }
+
+        .bottom {
+            background-image: url(../assets/img/rgb-gradient-bar-for-logo-carrasel.jpg);
+        }
+    }
+
 </style>

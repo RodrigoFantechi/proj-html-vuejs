@@ -8,8 +8,6 @@ import MainAppointment from './MainAppointment.vue';
 export default {
     name: 'AppMain',
     components: {
-        SectionTitle,
-        SectionBody,
         MainIntroduction,
         MainDoctors,
         MainService,

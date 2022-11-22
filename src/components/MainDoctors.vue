@@ -70,5 +70,10 @@ export default {
         </section>
 </template>
 <style lang="scss" scoped>
-    
+@use '../assets/scss/variables' as *;
+.doctors {
+        background-color: $clr-light-1;
+
+        
+    }
 </style>

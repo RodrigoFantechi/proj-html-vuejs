@@ -1,9 +1,8 @@
 @use './variables' as *;
 
-
 main {
 
-    /* common rules */
+    /* COMMON MAIN RULES */
 
     font-family: $noto-sans;
     font-weight: 100;
@@ -12,10 +11,11 @@ main {
     h2 {
         font-weight: 100;
     }
-    h5{
+
+    h5 {
         font-size: 0.85rem;
         font-weight: 100;
-        line-height: 2rem; 
+        line-height: 2rem;
     }
 
     h6 {
@@ -29,7 +29,7 @@ main {
         font-size: 0.65rem;
         font-weight: 100;
         line-height: 1.5rem;
-        
+
     }
 
     .square {
@@ -70,6 +70,7 @@ main {
         height: 1px;
         margin: 1.5rem auto;
     }
+
     .bottom {
         .col {
             padding: 2rem 0;
@@ -84,40 +85,9 @@ main {
         }
     }
 
-    /* specific sections */
-    .doctors {
-        background-color: $clr-light-1;
-        .my_card{
+    .doctors .my_card {
             background-color: $clr-light;
         }
-    }
-    .facilities {
-        color: $clr-light;
     
-        .top {
-    
-            background-image: url(../img/paralax-bg-tour-facilities.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    
-    }
-    .appointment {
-        color: $clr-light;
-    
-        .top {
-            background-image: url(../img/make-an-appointment.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            button{
-                border: none;
-                color: $clr-light;
-                width: 100%;
-    
-            }
-        }
-        .bottom{
-            background-image: url(../img/rgb-gradient-bar-for-logo-carrasel.jpg);
-        }
-    }
+
 }

@@ -66,5 +66,16 @@ export default {
         </section>
 </template>
 <style lang="scss" scoped>
-    
+@use '../assets/scss/variables' as *;
+.facilities {
+        color: $clr-light;
+
+        .top {
+
+            background-image: url(../assets/img/paralax-bg-tour-facilities.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
 </style>
