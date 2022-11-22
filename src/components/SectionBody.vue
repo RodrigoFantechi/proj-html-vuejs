@@ -1,7 +1,7 @@
 
 <script>
 export default {
-    name: 'SingleCol'
+    name: 'SectionBody'
 }
 </script>
 <template>
