@@ -61,6 +61,13 @@ export const store = reactive({
         'Emergency Care',
         'Expert Diagnostics',
         'Superb Rehabilitation'
+    ],
+    departments:[
+        'Cardiology',
+        'Pediatrics',
+        'Diabetes Care',
+        'Pre-natal Care',
+        'Ultrasound Enchoscardiogram'
     ]
     
 
