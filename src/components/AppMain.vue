@@ -15,9 +15,10 @@ export default {
     },
 }
 </script>
+
 <template>
     <main>
-        <section class="introduction ">
+        <section class="introduction">
             <div class="my_container">
                 <SectionTitle>
                     <template #title>
@@ -32,7 +33,7 @@ export default {
                     <SingleCol v-for="(col, index) in store.title">
                         <template #image> <img :src="'src/assets/img/icon-' + (index + 1) + '.png'" alt=""></template>
                         <template #title>
-                            <h6>{{ col }}</h6>
+                            <h5>{{ col }}</h5>
                         </template>
                         <template #description>
                             <p>
@@ -71,7 +72,7 @@ export default {
                     <SingleCol v-for="(doctor, index) in store.doctors" class="text-start">
                         <template #image> <img :src="'src/assets/img/doctor-' + (index + 1) + '.jpg'" alt=""></template>
                         <template #title>
-                            <h6 class="p-3 m-0">{{ doctor.name }} <br> {{ doctor.profession }}</h6>
+                            <h5 class="p-3 m-0">{{ doctor.name }} <br> {{ doctor.profession }}</h5>
                         </template>
                         <template #description>
                             <p class="p-3 m-0">
@@ -123,7 +124,7 @@ export default {
                         <template #image> <img class="mb-2" :src="'src/assets/img/icon-' + (service.img) + '.png'"
                                 alt=""></template>
                         <template #title>
-                            <h6>{{ service.title }}</h6>
+                            <h5>{{ service.title }}</h5>
                         </template>
                         <template #description>
                             <p>
@@ -133,7 +134,6 @@ export default {
                         </template>
 
                     </SingleCol>
-
                 </div>
             </div>
         </section>
@@ -152,9 +152,9 @@ export default {
                         </template>
                         <template #subtitle>
                             <h6 class="my-3"> Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
-                            dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
-                            quasi
-                            architecto beatae </h6>
+                                dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
+                                quasi
+                                architecto beatae </h6>
                         </template>
                         <template #default>
                             <img src="../assets/img/play-icon.png" alt="">
@@ -162,33 +162,82 @@ export default {
                     </SectionTitle>
                 </div>
             </div>
-            <div class="container-fluid "></div>
-            <div class="row">
-                <SingleCol v-for="(col, index) in store.title">
-                    <template #image> <img :src="'src/assets/img/icon-' + (index + 1) + '.png'" alt=""></template>
-                    <template #title>
-                        <h6>{{ col }}</h6>
-                    </template>
-                    <template #description>
-                        <p>
-                            Sed ut prespiciatis unde omnis iste natus error sit voluptam accusantim
-                        </p>
-                    </template>
+            <div class="bottom">
+                <div class="container-fluid ">
+                    <div class="row">
+                        <SingleCol v-for="(col, index) in store.facilities"
+                            :style="(index != 0 && index != 1 ? 'background-color : #327EC7;' : '') || (index == 0 ? 'background-color : #3AAFBF;' : 'background-color : #3597C3;')">
+                            <template #title>
+                                <h6>{{ col }}</h6>
+                            </template>
+                            <template #default>
+                                <img src="../assets/img/wave-divider.png" alt="">
+                            </template>
+                            <template #description>
+                                <p>sed ut prersiciatis unde omnis iste natus error sit vopuptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque</p>
+                                <a class="my_btn_learn_more" href="">LEARN MORE</a>
+                            </template>
 
-                </SingleCol>
+                        </SingleCol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="appointment">
+            <div class="top">
+                <div class="my_container">
+                    <SectionTitle>
+                        <template #picture>
+                            <img src="../assets/img/icon-7.png" alt="">
+                        </template>
+                        <template #title>
+                            <h2>Make An Appointment</h2>
+                        </template>
+                        <template #line>
+                            <div class="line"></div>
+                        </template>
+                        <template #subtitle>
+                            <h6 class="my-3"> Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
+                                dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
+                                quasi
+                                architecto beatae </h6>
+                        </template>
+                        <template #default>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="name" placeholder="Name" class="my_form_control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="name" placeholder="E-mail" class="my_form_control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="name" placeholder="Phone Number" class="my_form_control">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="name" placeholder="Appointment Date"
+                                        class="my_form_control">
+                                </div>
+                                <div class="col-12">
+                                    <textarea rows="4" cols="50" placeholder="How can we help?*"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="my_btn_learn_more">MAKE AN APPOINTMENT</button>
+                        </template>
+                    </SectionTitle>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="my_container">
+                    <img src="../assets" alt="">
+                </div>
             </div>
         </section>
     </main>
     <!-- /main -->
 </template>
+
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
 
-.top {
-    color: $clr-light;
-    font-weight: 100;
-    background-image: url(../assets/img/paralax-bg-tour-facilities.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 </style>

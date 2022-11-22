@@ -1,4 +1,3 @@
-
 <script>
 import { store } from '../store'
 export default {
@@ -10,8 +9,9 @@ export default {
     },
 }
 </script>
-<template >
-    <nav class="montserrat">
+
+<template>
+    <nav>
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="left_items">
                 <div class="image_logo">
@@ -28,6 +28,7 @@ export default {
         </div>
     </nav>
 </template>
+
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
 
@@ -36,6 +37,7 @@ nav {
     position: fixed;
     background-color: transparent;
     font-weight: 600;
+    font-family: $montserrat;
 
 
     .container-fluid {

@@ -2,23 +2,34 @@
 
 
 main {
+
+    /* common rules */
+
     font-family: $noto-sans;
     font-weight: 100;
     text-align: center;
+
     h2 {
         font-weight: 100;
+    }
+    h5{
+        font-size: 0.85rem;
+        font-weight: 100;
+        line-height: 2rem; 
     }
 
     h6 {
         font-size: 0.85rem;
         font-weight: 100;
-        line-height: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
     }
 
     p {
         font-size: 0.65rem;
         font-weight: 100;
-        line-height: 1.2rem;
+        line-height: 1.5rem;
+        
     }
 
     .square {
@@ -59,10 +70,54 @@ main {
         height: 1px;
         margin: 1.5rem auto;
     }
+    .bottom {
+        .col {
+            padding: 2rem 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
 
+        .my_btn_learn_more {
+            border: 1px solid $clr-light;
+            background-color: transparent;
+
+        }
+    }
+
+    /* specific sections */
     .doctors {
         background-color: $clr-light-1;
-
-
+        .my_card{
+            background-color: $clr-light;
+        }
+    }
+    .facilities {
+        color: $clr-light;
+    
+        .top {
+    
+            background-image: url(../img/paralax-bg-tour-facilities.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+    }
+    .appointment {
+        color: $clr-light;
+    
+        .top {
+            background-image: url(../img/make-an-appointment.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            button{
+                border: none;
+                color: $clr-light;
+                width: 100%;
+    
+            }
+        }
+        .bottom{
+            background-image: url(../img/rgb-gradient-bar-for-logo-carrasel.jpg);
+        }
     }
 }

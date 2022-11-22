@@ -5,6 +5,8 @@
 @use './variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;1,400&family=Noto+Sans+JP:wght@100;400;700&display=swap');
 
+
+/* commons rules */
 *{
     margin: 0;
     padding: 0;
@@ -32,10 +34,34 @@ a{
         color: $clr-light;
     }
 }
-.montserrat{
-    font-family: $montserrat;
-}
+
 .sans{
     font-family: $noto-sans;
     font-weight: 100;
+}
+.my_btn_learn_more {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-family: $montserrat;
+    padding: 0.65rem 1.5rem;
+    background-color: $clr-primary;
+    display: inline-block;
+}
+input[type~="text"], textarea{
+    color: $clr-light;
+    padding: 0.75rem;
+    background-color: transparent;
+    border: 1px solid $clr-light;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    width: 100%;
+
+}
+::placeholder {
+    color: $clr-light;
+    opacity: 0.75;
+}
+textarea:focus, input:focus{
+    outline: none;
 }

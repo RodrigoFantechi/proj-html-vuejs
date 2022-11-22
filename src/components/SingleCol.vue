@@ -4,11 +4,12 @@ export default {
     name: 'SingleCol'
 }
 </script>
-<template >
+<template>
     <div class="col">
         <div class="my_card">
             <slot name="image"></slot>
             <slot name="title"></slot>
+            <slot></slot>
             <slot name="description"></slot>
             <slot name="icons"></slot>
         </div>
@@ -17,18 +18,4 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
-h6 {
-    font-size: 0.85rem;
-    font-weight: 100;
-    line-height: 1.5rem;
-}
-
-p {
-    font-size: 0.65rem;
-    font-weight: 100;
-    line-height: 1.2rem;
-}
-.my_card{
-    background-color: $clr-light;
-}
 </style>
