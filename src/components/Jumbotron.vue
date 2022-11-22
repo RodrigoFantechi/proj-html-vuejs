@@ -28,7 +28,7 @@ export default {
 
 
         span {
-            color: $clr-pelorous-m;
+            color: $clr-primary;
         }
 
         .my_btn {
@@ -37,7 +37,7 @@ export default {
             letter-spacing: 0.1rem;
             font-family: $montserrat;
             padding: 0.75rem 1.5rem;
-            background-color: $clr-pelorous-ma;
+            background-color: $clr-primary;
             display: inline-block;
         }
     }   

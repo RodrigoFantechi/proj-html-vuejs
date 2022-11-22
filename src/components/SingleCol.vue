@@ -8,9 +8,9 @@ export default {
     <div class="col">
         <div class="my_card">
             <slot name="image"></slot>
-            <h6><slot name="title"></slot></h6>
-            <p><slot name="description"></slot></p>
-            <div name="icons"><slot></slot></div>
+            <slot name="title"></slot>
+            <slot name="description"></slot>
+            <div class="list_icons d-flex p-3"><slot name="icons"></slot></div>
         </div>
     </div>
     <!-- /.col -->

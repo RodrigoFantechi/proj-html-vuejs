@@ -30,6 +30,32 @@ export const store = reactive({
             name: 'ANNA SMITH',
             profession: 'Nurse Practitioner',
         },
+    ],
+    services:[
+        {
+            title: 'REHABILITATION CENTER',
+            img: '14'
+        },
+        {
+            title: 'DENTAL IPANTS',
+            img: '15'
+        },
+        {
+            title: 'MEDICINE RESEARCH',
+            img: '16'
+        },
+        {
+            title: 'BLOOD BANK',
+            img: '11'
+        },
+        {
+            title: 'PHARMACEUTICAL ADVICE',
+            img: '12'
+        },
+        {
+            title: 'MEDICAL CONSELING',
+            img: '13'
+        },
     ]
     
 

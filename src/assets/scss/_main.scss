@@ -5,20 +5,54 @@ main {
     font-family: $noto-sans;
     font-weight: 100;
 
-    .doctors {
-        background-color: #F7F7F7;
-
-        .section_title {
-            img {
-                width: 50px;
-            }
-
-            .line {
-                border-bottom: 1px solid black;
-                width: 154px;
-                height: 1px;
-                margin: 1.5rem auto;
-            }
+    .py-6{
+        padding: 6rem 0;
+    }
+    h6 {
+        font-size: 0.85rem;
+        font-weight: 100;
+        line-height: 1.5rem;
+    }
+    
+    p {
+        font-size: 0.65rem;
+        font-weight: 100;
+        line-height: 1.2rem;
+    }
+    .square{
+       height: 19px;
+       aspect-ratio: 1/1;
+       margin: 0 0.2rem;
+    }
+    .face{
+        background-color: $clr-face;
+    }
+    .twi{
+        background-color: $clr-twi;
+    }
+    .insta{
+        background-color: $clr-insta;
+    }
+    .i{
+        color: $clr-light;
+        font-size: 0.65rem;
+    }
+    
+    .section_title {
+        img {
+            width: 50px;
         }
     }
-}
+    .line {
+        border-bottom: 1px solid black;
+        width: 154px;
+        height: 1px;
+        margin: 1.5rem auto;
+    }
+
+    .doctors {
+        background-color: $clr-light-1;
+
+      
+        }
+    }

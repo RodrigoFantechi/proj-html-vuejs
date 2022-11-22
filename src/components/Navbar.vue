@@ -58,17 +58,17 @@ nav {
                 margin: 0.7rem;
 
                 &:hover {
-                    color: $clr-pelorous-m
+                    color: $clr-primary
                 }
 
                 &.active {
-                    color: $clr-pelorous-m
+                    color: $clr-primary
                 }
             }
 
             .my_btn {
                 padding: 0.5rem 1rem;
-                background-color: $clr-pelorous-ma;
+                background-color: $clr-primary;
 
                 & a:hover {
                     color: $clr-light;
