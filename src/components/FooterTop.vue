@@ -21,7 +21,7 @@ export default {
                         accusantium, rem aperiamsiat. Voluptatem accusest etsium doloremque laudaiem. Lorem ipsum
                         sit dolores est unser. </p>
                     <hr>
-                    <p>LEARNMORE ABOUT US</p>
+                    <p>LEARN MORE ABOUT US</p>
                     <div class="list_icons d-flex py-3">
                         <div class="square d-flex justify-content-center align-items-center face">
                             <font-awesome-icon class="i" icon="fa-brands fa-facebook-f" />

@@ -2,23 +2,29 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-export default{
+import { store } from './store'
+export default {
   name: 'App',
-  components:{
+  components: {
     AppHeader,
     AppMain,
     AppFooter,
   },
-  mounted() {
-    
+  data() {
+    return {
+      store,
+    }
   },
-}
+      mounted() {
+        setInterval(store.mouveSlider,50);
+      },
+  }
 </script>
 
 <template>
-  <AppHeader/>
+  <AppHeader />
   <AppMain />
-  <AppFooter/>
+  <AppFooter />
 </template>
 
 <style lang="scss" scoped>

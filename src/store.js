@@ -2,8 +2,9 @@ import {reactive} from 'vue'
 
 
 export const store = reactive({
+    
     error: null,
-    headerLogo :'/src/assets/img/medical_logo_1x_light.png',
+
     links: [
         'HOME',
         'ABOUT',
@@ -68,7 +69,35 @@ export const store = reactive({
         'Diabetes Care',
         'Pre-natal Care',
         'Ultrasound Enchoscardiogram'
-    ]
+    ],
+    slider:[
+        {
+            slide:'1',
+            position: 0,
+        },
+        {
+            slide: '2',
+            position: 200
+        },
+        {
+            slide: '3',
+            position: 400
+        },
+        {
+            slide: '4',
+            position: 600
+        },
+    ],
+
+    mouveSlider: ()=>{
+        store.slider.forEach(element => {
+            element.position++
+            if (element.position>600){
+                element.position = -200
+            } 
+        });
+        
+    }
     
 
    

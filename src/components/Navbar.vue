@@ -15,7 +15,7 @@ export default {
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="left_items">
                 <div class="image_logo">
-                    <img :src="store.headerLogo" alt="Avada Health">
+                    <img src="../assets/img/medical_logo_1x_light.png" alt="Avada Health">
                 </div>
             </div>
             <div class="right_items">

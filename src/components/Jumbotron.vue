@@ -35,5 +35,10 @@ export default {
        h1,p{
         font-weight: 100;
        }
+       p{
+        font-size: 0.85rem;
+       }
+   
+   
     }   
 </style>
