@@ -40,9 +40,12 @@ export default {
         font-weight: 100;
        }
        p{
-        font-size: 0.85rem;
+        font-size: 1rem;
        }
-   
+       h1{
+        font-size: 56px;
+       }
+          
    
     }   
 </style>

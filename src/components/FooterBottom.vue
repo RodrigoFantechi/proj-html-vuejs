@@ -39,6 +39,11 @@ export default {
             aspect-ratio: 1/1;
             background-color: $clr-dark-1;
             border-radius: 2px 2px 0 0;
+            transition: 1s;
+            &:hover{
+                width: 27px;
+                height: 35px;
+            }
 
         }
     }
