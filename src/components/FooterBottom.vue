@@ -15,22 +15,18 @@ export default {
                 </div>
                 <div class="right d-flex align-items-end">
                     <div class="placepage d-flex align-items-center justify-content-center">
-                        <font-awesome-icon class="i" icon="fa-solid fa-angle-up" />
+                        <a href="header"><font-awesome-icon class="i" icon="fa-solid fa-angle-up" /></a>
                     </div>
                 </div>
-
             </div>
         </section>
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
-
 .bottom_footer {
         background-color: $clr-light-1;
 
         p {
-            font-size: 0.6rem;
-            font-weight: 100;
             line-height: 1rem;
             margin: 0;
         }
@@ -41,10 +37,6 @@ export default {
             background-color: $clr-dark-1;
             border-radius: 2px 2px 0 0;
 
-            .i {
-                color: $clr-light;
-                font-size: 0.65rem;
-            }
         }
     }
 </style>

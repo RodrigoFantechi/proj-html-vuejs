@@ -1,21 +1,15 @@
 @use './variables' as *;
 
-main {
+/* COMMON MAIN RULES */
 
-    /* COMMON MAIN RULES */
+main {
 
     font-family: $noto-sans;
     font-weight: 100;
     text-align: center;
 
-    h2 {
-        font-weight: 100;
-    }
-
     h5 {
-        font-size: 0.85rem;
         font-weight: 100;
-        line-height: 2rem;
     }
 
     h6 {
@@ -24,50 +18,13 @@ main {
         line-height: 2rem;
         letter-spacing: 0.1rem;
     }
-
-    p {
-        font-size: 0.65rem;
-        font-weight: 100;
-        line-height: 1.5rem;
-
-    }
-
-    .square {
-        height: 19px;
-        aspect-ratio: 1/1;
-        margin: 0 0.2rem;
-    }
-
-    .face {
-        background-color: $clr-face;
-    }
-
-    .twi {
-        background-color: $clr-twi;
-    }
-
-    .insta {
-        background-color: $clr-insta;
-    }
-
-    .i {
-        color: $clr-light;
-        font-size: 0.65rem;
-    }
-
-    .section_title {
-        img {
-            width: 50px;
-        }
-
-        width: 70%;
-        margin: auto;
+    
+    .section_title img {
+        width: 50px;
     }
 
     .line {
-        border-bottom: 1px solid black;
-        width: 154px;
-        height: 1px;
+        width: 180px;
         margin: 1.5rem auto;
     }
 
@@ -86,8 +43,7 @@ main {
     }
 
     .doctors .my_card {
-            background-color: $clr-light;
-        }
-    
+        background-color: $clr-light;
+    }
 
 }

@@ -40,6 +40,7 @@ export default {
 
                 <div class="col-4 px-5">
                     <h5 class="mt-3">CONTACT INFORMATION</h5>
+                    <div class="line mb-3"></div>
                     <div class="adress d-flex align-items-center">
                         <font-awesome-icon class="clr_primary" icon="fa-solid fa-location-dot" />
                         <p class="ms-1"> <a href=""> 121 King Street, London United Kingdom</a></p>
@@ -52,6 +53,7 @@ export default {
 
                 <div class="col-4">
                     <h5 class="mt-3">MEDICAL DEPARTMENTS</h5>
+                    <div class="line mb-3"></div>
                     <div class=" d-flex align-items-center" v-for="depart in store.departments">
                         <div class="circle">
                             <font-awesome-icon class="i" icon="fa-solid fa-angle-right" />
@@ -68,12 +70,9 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
-
     .top_footer {
+        
         p {
-            font-size: 0.65rem;
-            font-weight: 100;
-            line-height: 1.5rem;
             margin: 0;
         }
 
@@ -82,43 +81,11 @@ export default {
             margin-bottom: 1rem;
         }
 
-        font-family: $noto-sans;
-
-
-
         h5 {
             font-family: $montserrat;
-            font-size: 0.85rem;
             font-weight: bold;
-            line-height: 2rem;
         }
 
-        .square {
-            height: 19px;
-            aspect-ratio: 1/1;
-            margin: 0 0.2rem;
-        }
-
-        .face {
-            background-color: $clr-face;
-        }
-
-        .twi {
-            background-color: $clr-twi;
-        }
-
-        .insta {
-            background-color: $clr-insta;
-        }
-
-        .you {
-            background-color: $clr-you;
-        }
-
-        .i {
-            color: $clr-light;
-            font-size: 0.65rem;
-        }
 
         .circle {
             width: 20px;
@@ -135,11 +102,15 @@ export default {
         }
 
         .my_btn_learn_more {
-
             background-color: $clr-light;
             color: $clr-dark;
             font-weight: bold;
             border: 1px solid $clr-dark;
+        }
+        .line{
+            width: 30px;
+            border-bottom: 1px solid $clr-primary;
+            
         }
     }
 </style>

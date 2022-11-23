@@ -1,7 +1,5 @@
 @use '/node_modules/bootstrap/scss/bootstrap.scss';
-@use './header.scss';
 @use './main.scss';
-@use './footer.scss';
 @use './variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;1,400&family=Noto+Sans+JP:wght@100;400;700&display=swap');
 
@@ -35,10 +33,6 @@ a{
     }
 }
 
-.sans{
-    font-family: $noto-sans;
-    font-weight: 100;
-}
 .my_btn_learn_more {
     font-size: 12px;
     font-weight: 400;
@@ -48,6 +42,7 @@ a{
     background-color: $clr-primary;
     display: inline-block;
 }
+
 input[type~="text"], textarea{
     color: $clr-light;
     padding: 0.75rem;
@@ -67,4 +62,46 @@ textarea:focus, input:focus{
 }
 .clr_primary{
     color: $clr-primary;
+}
+p {
+    font-size: 0.65rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+h5 {
+    font-size: 0.85rem;
+    line-height: 2rem;
+}
+h2 {
+    font-weight: 100;
+}
+.square {
+    height: 19px;
+    aspect-ratio: 1/1;
+    margin: 0 0.2rem;
+}
+.face {
+    background-color: $clr-face;
+}
+
+.twi {
+    background-color: $clr-twi;
+}
+
+.insta {
+    background-color: $clr-insta;
+}
+
+.you {
+    background-color: $clr-you;
+}
+
+.i {
+    color: $clr-light;
+    font-size: 0.65rem;
+}
+.line {
+    border-bottom: 1px solid black;
+    height: 1px;
+    
 }

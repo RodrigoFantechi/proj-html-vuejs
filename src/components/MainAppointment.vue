@@ -86,11 +86,13 @@ export default {
                 width: 100%;
 
             }
+            .line{
+                border-bottom: 1px solid $clr-light;
+            }
         }
 
         .bottom {
             background-image: url(../assets/img/rgb-gradient-bar-for-logo-carrasel.jpg);
         }
     }
-
 </style>

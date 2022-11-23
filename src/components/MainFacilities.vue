@@ -75,6 +75,10 @@ export default {
             background-image: url(../assets/img/paralax-bg-tour-facilities.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            
+            .line{
+                border-bottom: 1px solid $clr-light;
+            }
         }
 
     }

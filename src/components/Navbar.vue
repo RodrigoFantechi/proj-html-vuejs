@@ -31,7 +31,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
-
 nav {
     width: 100%;
     position: fixed;

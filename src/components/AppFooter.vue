@@ -2,17 +2,11 @@
 <script>
 import FooterTop from './FooterTop.vue';
 import FooterBottom from './FooterBottom.vue';
-import { store } from '../store'
 export default {
     name: 'AppFooter',
     components:{
         FooterTop,
         FooterBottom,
-    },
-    data() {
-        return {
-            store,
-        }
     },
 }
 </script>
@@ -24,5 +18,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
-
+footer{
+    font-family: $noto-sans;
+}
 </style>

@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
-
  .jumbotron {
         background-image: url(../assets/img/header-image-homepage.jpg);
         background-repeat: no-repeat;

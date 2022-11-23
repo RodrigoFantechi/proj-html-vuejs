@@ -1,4 +1,3 @@
-
 <script>
 export default {
     name: 'SectionTitle',
@@ -14,5 +13,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-
+.section_title {
+    width: 70%;
+    margin: auto;
+}
 </style>
