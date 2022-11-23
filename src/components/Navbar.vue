@@ -33,7 +33,7 @@ export default {
 @use '../assets/scss/variables' as *;
 nav {
     width: 100%;
-    position: fixed;
+    position: absolute;
     background-color: transparent;
     font-weight: 600;
     font-family: $montserrat;

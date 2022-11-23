@@ -3,7 +3,6 @@ import { reactive } from 'vue'
 
 export const store = reactive({
 
-    imgNav: 'medical_logo_1x_light.png',
     copyRight: 'Copyright2012 -2020 | Awada Theme by Theme Fusion | All Rights Reserved | Powered byWordPress',
 
     jumbotron:{
