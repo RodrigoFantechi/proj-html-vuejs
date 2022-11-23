@@ -14,6 +14,11 @@ export default {
             store,
         }
     },   
+    methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/img/icon-${name}`, import.meta.url).href
+    }
+  }  
 }
 </script>
 <template>
@@ -25,32 +30,26 @@ export default {
                     </template>
 
                     <template #title>
-                        <h2>
-                            OUR HEALTH SERVICES
-                        </h2>
+                        <h2>{{store.services.mainTitle}}</h2>
                     </template>
                     <template #line>
                         <div class="line"></div>
                     </template>
 
                     <template #subtitle>
-                        <h6 class="my-3"> Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
-                            dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
-                            quasi
-                            architecto beatae </h6>
+                        <h6 class="my-3"> {{store.services.description}}</h6>
                     </template>
                 </SectionTitle>
                 <div class="row row-cols-3 pt-5">
-                    <SectionBody v-for="(service, index) in store.services">
-                        <template #image> <img class="mb-2" :src="'src/assets/img/icon-' + (service.img) + '.png'"
+                    <SectionBody v-for="service in store.services.cols">
+                        <template #image> <img class="mb-2" :src="getImageUrl(service.img)"
                                 alt=""></template>
                         <template #title>
                             <h5>{{ service.title }}</h5>
                         </template>
                         <template #description>
                             <p>
-                                At vero et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                                voluptatum deleniti atque corrupti quos dolore et quas
+                               {{service.description}}
                             </p>
                         </template>
 

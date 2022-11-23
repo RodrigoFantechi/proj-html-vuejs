@@ -1,17 +1,20 @@
 
 <script>
-
+import { store } from '../store'
 export default {
     name: 'FooterBottom',
-
+    data() {
+        return {
+            store,
+        }
+    },
 }
 </script>
 <template>
           <section class="bottom_footer">
             <div class=" d-flex  justify-content-between mx-5">
                 <div class="left my-3">
-                    <p>&copy; Copyright2012 -2020 | Awada Theme by Theme Fusion | All Rights Reserved | Powered by
-                        WordPress</p>
+                    <p>&copy; {{store.copyRight}}</p>
                 </div>
                 <div class="right d-flex align-items-end">
                     <div class="placepage d-flex align-items-center justify-content-center">

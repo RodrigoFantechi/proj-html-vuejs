@@ -25,16 +25,13 @@ export default {
                             <img src="../assets/img/icon-7.png" alt="">
                         </template>
                         <template #title>
-                            <h2>TOUR OUR FACILITIES</h2>
+                            <h2>{{store.facilities.mainTitle}}</h2>
                         </template>
                         <template #line>
                             <div class="line"></div>
                         </template>
                         <template #subtitle>
-                            <h6 class="my-3"> Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
-                                dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
-                                quasi
-                                architecto beatae </h6>
+                            <h6 class="my-3"> {{store.facilities.description}}</h6>
                         </template>
                         <template #default>
                             <img src="../assets/img/play-icon.png" alt="">
@@ -45,20 +42,18 @@ export default {
             <div class="bottom">
                 <div class="container-fluid ">
                     <div class="row">
-                        <SectionBody v-for="(col, index) in store.facilities"
+                        <SectionBody v-for="(col, index) in store.facilities.cols"
                             :style="(index != 0 && index != 1 ? 'background-color : #327EC7;' : '') || (index == 0 ? 'background-color : #3AAFBF;' : 'background-color : #3597C3;')">
                             <template #title>
-                                <h6>{{ col }}</h6>
+                                <h6>{{ col.title }}</h6>
                             </template>
                             <template #default>
                                 <img src="../assets/img/wave-divider.png" alt="">
                             </template>
                             <template #description>
-                                <p>sed ut prersiciatis unde omnis iste natus error sit vopuptatem accusantium doloremque
-                                    laudantium, totam rem aperiam, eaque</p>
-                                <a class="my_btn_learn_more" href="">LEARN MORE</a>
+                                <p>{{col.description}}</p>
+                                <a class="my_btn_learn_more" href="">{{col.btn}}</a>
                             </template>
-
                         </SectionBody>
                     </div>
                 </div>

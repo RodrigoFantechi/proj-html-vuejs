@@ -13,7 +13,12 @@ export default {
         return {
             store,
         }
-    },   
+    }, 
+    methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/img/doctor-${name}`, import.meta.url).href
+    }
+  }  
 }
 </script>
 <template>
@@ -25,31 +30,24 @@ export default {
                     </template>
 
                     <template #title>
-                        <h2>
-                            MEET OUR DOCTORS
-                        </h2>
+                        <h2>{{store.doctors.mainTitle}} </h2>
                     </template>
                     <template #line>
                         <div class="line"></div>
                     </template>
 
                     <template #subtitle>
-                        <h6 class="my-3"> Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
-                            dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
-                            quasi
-                            architecto beatae </h6>
+                        <h6 class="my-3">{{store.doctors.description}}</h6>
                     </template>
                 </SectionTitle>
                 <div class="row">
-                    <SectionBody v-for="(doctor, index) in store.doctors" class="text-start">
-                        <template #image> <img :src="'src/assets/img/doctor-' + (index + 1) + '.jpg'" alt=""></template>
+                    <SectionBody v-for="(doctor, index) in store.doctors.cols" class="text-start">
+                        <template #image> <img :src="getImageUrl(doctor.img)" alt=""></template>
                         <template #title>
                             <h5 class="p-3 m-0">{{ doctor.name }} <br> {{ doctor.profession }}</h5>
                         </template>
                         <template #description>
-                            <p class="p-3 m-0">
-                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                                voluptatum deleniti atque</p>
+                            <p class="p-3 m-0"> {{doctor.description}}</p>
                         </template>
                         <template #icons>
                             <div class="list_icons d-flex p-3">

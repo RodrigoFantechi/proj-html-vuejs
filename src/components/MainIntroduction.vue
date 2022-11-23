@@ -4,46 +4,50 @@ import SectionTitle from './SectionTitle.vue';
 import SectionBody from './SectionBody.vue';
 import { store } from '../store'
 export default {
-    name:'MainIntroduction',
-    components:{
+    name: 'MainIntroduction',
+    components: {
         SectionTitle,
         SectionBody
     },
-        data() {
+    data() {
         return {
             store,
         }
-    },   
+    },
+    methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/img/icon-${name}`, import.meta.url).href
+    }
+  }  
 }
 </script>
 <template>
-         <section class="introduction">
-            <div class="my_container">
-                <SectionTitle>
+    <section class="introduction">
+        <div class="my_container">
+            <SectionTitle>
+                <template #title>
+                    <h2>{{ store.introduction.mainTitle }}</h2>
+                </template>
+                <template #subtitle>
+                    <h6 class="my-3">{{ store.introduction.description }}</h6>
+                </template>
+            </SectionTitle>
+            <div class="row pt-5">
+                <SectionBody v-for="col in store.introduction.cols">
+                    <template #image> <img :src="getImageUrl(col.image)" alt=""></template>
                     <template #title>
-                        <h2> Welcome to Avada Health</h2>
+                        <h5>{{ col.title }}</h5>
                     </template>
-                    <template #subtitle>
-                        <h6 class="my-3">Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
-                            dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo</h6>
+                    <template #description>
+                        <p>
+                            {{ col.text }}
+                        </p>
                     </template>
-                </SectionTitle>
-                <div class="row pt-5">
-                    <SectionBody v-for="(col, index) in store.title">
-                        <template #image> <img :src="'src/assets/img/icon-' + (index + 1) + '.png'" alt=""></template>
-                        <template #title>
-                            <h5>{{ col }}</h5>
-                        </template>
-                        <template #description>
-                            <p>
-                                Sed ut prespiciatis unde omnis iste natus error sit voluptam accusantim
-                            </p>
-                        </template>
 
-                    </SectionBody>
-                </div>
+                </SectionBody>
             </div>
-        </section>
+        </div>
+    </section>
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;

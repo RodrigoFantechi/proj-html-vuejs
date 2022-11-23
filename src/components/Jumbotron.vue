@@ -1,6 +1,12 @@
 <script>
+import { store } from '../store'
 export default {
-    name: 'Jumbotron'
+    name: 'Jumbotron',
+    data() {
+        return {
+            store,
+        }
+    },   
 }
 </script>
 
@@ -8,11 +14,9 @@ export default {
 <section class="jumbotron">
             <div class="my_container">
                 <div class="col-8">
-                    <h1>Caring <span>For Life</span></h1>
-                    <p class="my-3">Kind words can short and easy to speak, but their echoes are truly endless. Avada
-                        Health focuses on
-                        you as if it was our own family. </p>
-                    <a class="my_btn_learn_more" href="">LEARN MORE</a>
+                    <h1>{{store.jumbotron.mainTitle1}} <span>{{store.jumbotron.mainTitle2}}</span></h1>
+                    <p class="my-3">{{store.jumbotron.description}}</p>
+                    <a class="my_btn_learn_more" href="">{{store.jumbotron.btn}}</a>
                 </div>
             </div>
         </section>

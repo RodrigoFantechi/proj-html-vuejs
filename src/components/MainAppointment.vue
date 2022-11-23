@@ -14,6 +14,11 @@ export default {
             store,
         }
     },
+    methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/img/client-logos-${name}`, import.meta.url).href
+    }
+  }
 }
 </script>
 <template>
@@ -25,16 +30,13 @@ export default {
                         <img src="../assets/img/icon-7.png" alt="">
                     </template>
                     <template #title>
-                        <h2>Make An Appointment</h2>
+                        <h2>{{store.appointment.mainTitle}}</h2>
                     </template>
                     <template #line>
                         <div class="line"></div>
                     </template>
                     <template #subtitle>
-                        <h6 class="my-3"> Sed ut prespiciatis unde omnis iste natus error sit voluptatem accusantium
-                            dolorenque laudatium, totam rem aperiam, eaque ipsa quae ab illo invertore veritatis et
-                            quasi
-                            architecto beatae </h6>
+                        <h6 class="my-3"> {{store.appointment.description}}</h6>
                     </template>
                     <template #default>
                         <div class="row">
@@ -42,13 +44,13 @@ export default {
                                 <input type="text" name="name" placeholder="Name" class="my_form_control">
                             </div>
                             <div class="col-6">
-                                <input type="text" name="name" placeholder="E-mail" class="my_form_control">
+                                <input type="text" name="email" placeholder="E-mail" class="my_form_control">
                             </div>
                             <div class="col-6">
-                                <input type="text" name="name" placeholder="Phone Number" class="my_form_control">
+                                <input type="text" name="phone" placeholder="Phone Number" class="my_form_control">
                             </div>
                             <div class="col-6">
-                                <input type="text" name="name" placeholder="Appointment Date" class="my_form_control">
+                                <input type="text" name="date" placeholder="Appointment Date" class="my_form_control">
                             </div>
                             <div class="col-12">
                                 <textarea rows="4" cols="50" placeholder="How can we help?*"></textarea>
@@ -62,9 +64,7 @@ export default {
         <div class="bottom">
             <div class="my_container py-3">
                 <a href="#" v-for="slide in store.slider" :style="'left:'+(slide.position)+'px'">
-                    <img :src="'src/assets/img/client-logos-'+slide.slide+'-200x188.png'"  alt="">
-                    
-
+                    <img :src="getImageUrl(slide.slide)"  alt="">
                 </a>
                     
 
