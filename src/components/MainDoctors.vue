@@ -28,21 +28,21 @@ export default {
                     <template #picture>
                         <img src="../assets/img/icon-5.png" alt="">
                     </template>
-
                     <template #title>
                         <h2>{{store.doctors.mainTitle}} </h2>
                     </template>
                     <template #line>
                         <div class="line"></div>
                     </template>
-
                     <template #subtitle>
                         <h6 class="my-3">{{store.doctors.description}}</h6>
                     </template>
                 </SectionTitle>
                 <div class="row">
                     <SectionBody v-for="(doctor, index) in store.doctors.cols" class="text-start">
-                        <template #image> <img :src="getImageUrl(doctor.img)" alt=""></template>
+                        <template #image> 
+                            <img :src="getImageUrl(doctor.img)" alt="">
+                        </template>
                         <template #title>
                             <h5 class="p-3 m-0">{{ doctor.name }} <br> {{ doctor.profession }}</h5>
                         </template>

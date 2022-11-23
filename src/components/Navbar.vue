@@ -15,7 +15,7 @@ export default {
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="left_items">
                 <div class="image_logo">
-                    <img src="../assets/img/medical_logo_1x_light.png" alt="Avada Health">
+                    <a href="#"><img src="../assets/img/medical_logo_1x_light.png" alt="Avada Health"></a>
                 </div>
             </div>
             <div class="right_items">
@@ -31,6 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
+
 nav {
     width: 100%;
     position: absolute;
@@ -70,9 +71,15 @@ nav {
             .my_btn {
                 padding: 0.5rem 1rem;
                 background-color: $clr-primary;
+                transition: 0.3ms;
+              &:hover{
+                transform: scale(1.1);
+              }
 
                 & a:hover {
                     color: $clr-light;
+                    
+                    
                 }
             }
 

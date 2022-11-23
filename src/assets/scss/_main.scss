@@ -44,6 +44,17 @@ main {
 
     .doctors .my_card {
         background-color: $clr-light;
+        &:hover{
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    }
+
+    .my_card{
+        transition: 0.3ms;
+        &:hover:not(.facilities .my_card){
+            transform: scale(1.05);
+        }
     }
 
 }

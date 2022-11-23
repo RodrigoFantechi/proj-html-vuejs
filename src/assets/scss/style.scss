@@ -41,6 +41,10 @@ a{
     padding: 0.65rem 1.5rem;
     background-color: $clr-primary;
     display: inline-block;
+    transition: 0.3ms;
+    &:hover:not(.appointment .my_btn_learn_more){
+        transform: scale(1.1);
+    }
 }
 
 input[type~="text"], textarea{
